@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disease Prediction</title>
+</head>
+<body>
+    <h2>Enter your health details:</h2>
+    <form method="POST">
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+        
+        <label for="sex">Sex (0 for Female, 1 for Male):</label>
+        <input type="text" id="sex" name="sex"><br><br>
+        
+        <label for="chest_pain_type">Chest Pain Type (1-4):</label>
+        <input type="text" id="chest_pain_type" name="chest_pain_type"><br><br>
+        
+        <label for="blood_pressure">Resting Blood Pressure:</label>
+        <input type="text" id="blood_pressure" name="blood_pressure"><br><br>
+        
+        <label for="cholesterol">Cholesterol:</label>
+        <input type="text" id="cholesterol" name="cholesterol"><br><br>
+        
+        <label for="fasting_blood_sugar">Fasting Blood Sugar (0 or 1):</label>
+        <input type="text" id="fasting_blood_sugar" name="fasting_blood_sugar"><br><br>
+        
+        <label for="resting_ecg">Resting ECG (0-2):</label>
+        <input type="text" id="resting_ecg" name="resting_ecg"><br><br>
+        
+        <label for="max_heart_rate">Max Heart Rate:</label>
+        <input type="text" id="max_heart_rate" name="max_heart_rate"><br><br>
+        
+        <label for="exercise_angina">Exercise Induced Angina (0 or 1):</label>
+        <input type="text" id="exercise_angina" name="exercise_angina"><br><br>
+        
+        <label for="oldpeak">Oldpeak:</label>
+        <input type="text" id="oldpeak" name="oldpeak"><br><br>
+        
+        <label for="st_slope">ST Slope (1-3):</label>
+        <input type="text" id="st_slope" name="st_slope"><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
